@@ -14,7 +14,7 @@ void string_copy(char dest[], char source[]) {
 
 //test driver function copying str1 to str2
 int main(){
-  char str1[200]="C Test for Whyd to copy strings\n", str2[200];
+  char str1[200]="C Test for Maybe to copy strings\n", str2[200];
   string_copy(str2,str1);
   printf("%s",str2);
 
