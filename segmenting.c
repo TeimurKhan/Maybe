@@ -36,47 +36,47 @@ int push(struct WordList** head_ref, char* new_data){
 	if( newNode==NULL){
 		printf("%s","Dynamic Memory Error");
 	}
-    struct WordList* temp = (*head_ref); 
-    newNode->data = new_data;
-    newNode->next = NULL; 
-    temp = (*head_ref);
+        struct WordList* temp = (*head_ref); 
+        newNode->data = new_data;
+        newNode->next = NULL; 
+        temp = (*head_ref);
 	while(temp->next != NULL){
 		temp = temp->next;
 	}
-    temp->next = newNode;
+        temp->next = newNode;
 	return 0;
 }
 
 /* Print WordList */
 void printList(struct WordList *head){   
-    
+
 	struct WordList *temp = head;
-    if(temp == NULL){
-        printf("%s","Word List Empty\n");
-    }
-	else{
-		printf("%s","Segmented Sentence:\n\n");
+	if(temp == NULL){
+	printf("%s","Word List Empty\n");
 	}
-    temp=temp->next;
+	else{
+	printf("%s","Segmented Sentence:\n\n");
+	}
+	temp=temp->next;
 	while(temp != NULL){ 
-        printf("%s", temp->data);
-        printf("\n");
-        temp = temp->next;
-    } 
+	printf("%s", temp->data);
+	printf("\n");
+	temp = temp->next;
+	} 
 }
 
 /* Free Memory of List */
 void clear_list(struct WordList **head){
 	struct WordList *current = (*head);
 	struct WordList *following = (*head);
-    if(current == NULL){
-        printf("%s","Cleared\n");
-    }
+	if(current == NULL){
+	printf("%s","Cleared\n");
+	}
 	while(current != NULL){ 
 		following = current->next;
 		free(current);
 		current	= following;
-    }
+	}
 	*head=NULL;
 }
  
