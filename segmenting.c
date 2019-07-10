@@ -35,6 +35,7 @@ int push(struct WordList** head_ref, char* new_data){
 	struct WordList* newNode = (struct WordList*) malloc(sizeof(struct WordList));
 	if( newNode==NULL){
 		printf("%s","Dynamic Memory Error");
+		return 1;
 	}
         struct WordList* temp = (*head_ref); 
         newNode->data = new_data;
