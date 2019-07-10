@@ -53,16 +53,16 @@ void printList(struct WordList *head){
 
 	struct WordList *temp = head;
 	if(temp == NULL){
-	printf("%s","Word List Empty\n");
+		printf("%s","Word List Empty\n");
 	}
 	else{
-	printf("%s","Segmented Sentence:\n\n");
+		printf("%s","Segmented Sentence:\n\n");
 	}
 	temp=temp->next;
 	while(temp != NULL){ 
-	printf("%s", temp->data);
-	printf("\n");
-	temp = temp->next;
+		printf("%s", temp->data);
+		printf("\n");
+		temp = temp->next;
 	} 
 }
 
