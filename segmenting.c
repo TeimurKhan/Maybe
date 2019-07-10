@@ -13,8 +13,8 @@ int segment(char *, struct WordList**, char);
 
 /* Building Node of WordList */
 struct WordList { 
-    char* data; 
-    struct WordList* next; 
+	char* data; 
+	struct WordList* next; 
 };
 
 /* Initialize New WordList */
