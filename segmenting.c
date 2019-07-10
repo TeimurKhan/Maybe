@@ -79,7 +79,7 @@ void clear_list(struct WordList **head){
     }
 	*head=NULL;
 }
-
+ 
 /* Substring function, given indices */
 int  getSubString(char *source, char *target,int from, int to){
 	
